@@ -1,270 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1. shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1. shrink-to-fit=no"
+    />
     <title>GeekoShop</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/principal.css">
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/principal.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/all.min.css" />
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster:300,400,500,700&display=swap">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster:300,400,500,700&display=swap"
+    />
+  </head>
 
-<body>
+  <!--Comentarios-->
+
+  <body>
     <!--Esto es todo mi navbar-->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="./index.html">GeekoShop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand" href="./index.html">GeekoShop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Tienda.html">Tienda</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Escriba aqui" aria-label="Search">
-                <button class="btn btn-light" type="submit">Buscar</button>
-            </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Tienda.html">Tienda</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Escriba aqui"
+            aria-label="Search"
+          />
+          <button class="btn btn-light" type="submit">Buscar</button>
+        </form>
+      </div>
     </nav>
 
     <!--Soy un rastreo papu-->
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-        </ol>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+      </ol>
     </nav>
 
     <div class="contenedor">
-        <!--Esto es una alerta-->
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Hola Usuario!</strong> Verifica siempre llenar toda la informacion de los campos de contacto!.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
+      <!--Esto es una alerta-->
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Hola Usuario!</strong> Verifica siempre llenar toda la
+        informacion de los campos de contacto!.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
-        <!--Form de contacto con bootstrap MD osea material desgign-->
-        <div class="bg-white">
-            <div class="container">
-                <div class="row py-4 d-flex align-items-center">
-                    <div class="col-md-12 text-center">
-                        <!--Section: Contact v.1-->
-                        <section class="section pb-5">
-                            <!--Section heading-->
-                            <h2 class="section-heading h1 pt-4">Penes de colores</h2>
-                            <!--Section description-->
-                            <p class="section-description pb-4">Te trataremos de responder con la mejor calidad y
-                                seguridad en el momento.</p>
-                            <div class="row">
-                                <!--Grid column-->
-                                <div class="col-lg-5 mb-4">
-                                    <!--Form with header-->
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <!--Header-->
-                                            <div class="form-header blue accent-1">
-                                                <h3><i class="fas fa-envelope"></i> Escribenos:</h3>
-                                            </div>
-                                            <br>
-                                            <!--Body-->
-                                            <div class="md-form">
-                                                <i class="fas fa-user prefix grey-text"></i>
-                                                <input type="text" id="form-name" class="form-control">
-                                                <label for="form-name">Nombre</label>
-                                            </div>
-                                            <div class="md-form">
-                                                <i class="fas fa-envelope prefix grey-text"></i>
-                                                <input type="text" id="form-email" class="form-control">
-                                                <label for="form-email">Correo Electronico</label>
-                                            </div>
-                                            <div class="md-form">
-                                                <i class="fas fa-tag prefix grey-text"></i>
-                                                <input type="text" id="form-Subject" class="form-control">
-                                                <label for="form-Subject">Asunto</label>
-                                            </div>
-                                            <div class="md-form">
-                                                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                                <textarea id="form-text" class="form-control md-textarea"
-                                                    rows="3"></textarea>
-                                                <label for="form-text">Descripcion</label>
-                                            </div>
-                                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>                                    
-                                        </div>
-                                    </div>
-                                    <!--Form with header-->
-                                </div>
-                                <!--Grid column-->
-                                <div class="col-lg-7">
-
-                                    <!--Google map-->
-                                    <div id="map-container-google-11" class="z-depth-1-half map-container-6"
-                                        style="height: 400px">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.4102383717964!2d-99.5387405845882!3d27.456484943077754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86612287810f1cf1%3A0x40eaf882aa8f042d!2sSistema%2034%2C%20Villas%20del%20Sol%2C%2088250%20Nuevo%20Laredo%2C%20Tamps.!5e0!3m2!1ses-419!2smx!4v1601067775024!5m2!1ses-419!2smx"
-                                            width="600" height="450" frameborder="0" style="border:0;"
-                                            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                    </div>
-                                    <br>
-                                    <!--Buttons-->
-                                    <div class="row text-center">
-                                        <div class="col-md-4">
-                                            <a class="btn-floating blue accent-1"><i
-                                                    class="fas fa-map-marker-alt"></i></a>
-                                            <p>Nuevo Laredo, 88000</p>
-                                            <p>Tamaulipas, Mexico</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <a class="btn-floating blue accent-1"><i class="fas fa-phone"></i></a>
-                                            <p>+52 867 179 8518</p>
-                                            <p>Lun - Vier, 8:00-22:00</p>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <a class="btn-floating blue accent-1"><i class="fas fa-envelope"></i></a>
-                                            <p>GeekoShop@gmail.com</p>
-                                            <p>adrian1jr@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!--Section: Contact v.1-->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Aqui ocupamos el collapse-->
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse"
-                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Presiona aqui para ver las preguntas mas frecuentes
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <u>¿Cuáles son las formas de pago?</u>
-                        <p></p>
-                        Cualquier compra de nuestra tienda online se puede pagar por tarjeta de crédito/débito, por
-                        transferencia bancaria o por Paypal
-                    </div>
-                    <div class="card-body">
-                        <u>¿Puedo confiar al ingresar los datos de mi tarjeta?</u>
-                        <p></p>
-                        no tenemos acceso a tus datos bancarios en ningún momento. Al entrar en el proceso de pago, se
-                        te
-                        redirecciona a la pasarela de pago segura del banco y así tus datos son totalmente
-                        invisibles para nosotros. Una vez realizado el pago, es el banco el que nos da la confirmación
-                        instantánea de que el pago se ha tramitado correctamente.
-                    </div>
-                    <div>
-                        <div class="card-body">
-                            <u>Si pago por PayPal, me aparece una comisión ¿Cuál es el motivo?</u>
-                            <p></p>
-                            Paypal cobra una comisión a los establecimientos muy superior al de las tarjetas de crédito.
-                            Es por ello que si no la cobramos de forma separada, en muchos casos perderíamos dinero con
-                            la
-                            venta ya que muchas veces esta comisión es superior a nuestro margen.
-                            Recuerda que puedes evitar pagarla usando uno de los otros dos medios de pago.
+      <!--Form de contacto con bootstrap MD osea material desgign-->
+      <div class="bg-white">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-12 text-center">
+              <!--Section: Contact v.1-->
+              <section class="section pb-5">
+                <!--Section heading-->
+                <h2 class="section-heading h1 pt-4">Penes de colores</h2>
+                <!--Section description-->
+                <p class="section-description pb-4">
+                  Te trataremos de responder con la mejor calidad y seguridad en
+                  el momento.
+                </p>
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-lg-5 mb-4">
+                    <!--Form with header-->
+                    <div class="card">
+                      <div class="card-body">
+                        <!--Header-->
+                        <div class="form-header blue accent-1">
+                          <h3><i class="fas fa-envelope"></i> Escribenos:</h3>
                         </div>
+                        <br />
+                        <!--Body-->
+                        <div class="md-form">
+                          <i class="fas fa-user prefix grey-text"></i>
+                          <input
+                            type="text"
+                            id="form-name"
+                            class="form-control"
+                          />
+                          <label for="form-name">Nombre</label>
+                        </div>
+                        <div class="md-form">
+                          <i class="fas fa-envelope prefix grey-text"></i>
+                          <input
+                            type="text"
+                            id="form-email"
+                            class="form-control"
+                          />
+                          <label for="form-email">Correo Electronico</label>
+                        </div>
+                        <div class="md-form">
+                          <i class="fas fa-tag prefix grey-text"></i>
+                          <input
+                            type="text"
+                            id="form-Subject"
+                            class="form-control"
+                          />
+                          <label for="form-Subject">Asunto</label>
+                        </div>
+                        <div class="md-form">
+                          <i class="fas fa-pencil-alt prefix grey-text"></i>
+                          <textarea
+                            id="form-text"
+                            class="form-control md-textarea"
+                            rows="3"
+                          ></textarea>
+                          <label for="form-text">Descripcion</label>
+                        </div>
+                        <a
+                          class="btn btn-primary"
+                          onclick="document.getElementById('contact-form').submit();"
+                          >Send</a
+                        >
+                      </div>
                     </div>
+                    <!--Form with header-->
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-lg-7">
+                    <!--Google map-->
+                    <div
+                      id="map-container-google-11"
+                      class="z-depth-1-half map-container-6"
+                      style="height: 400px"
+                    >
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.4102383717964!2d-99.5387405845882!3d27.456484943077754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86612287810f1cf1%3A0x40eaf882aa8f042d!2sSistema%2034%2C%20Villas%20del%20Sol%2C%2088250%20Nuevo%20Laredo%2C%20Tamps.!5e0!3m2!1ses-419!2smx!4v1601067775024!5m2!1ses-419!2smx"
+                        width="600"
+                        height="450"
+                        frameborder="0"
+                        style="border: 0"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                      ></iframe>
+                    </div>
+                    <br />
+                    <!--Buttons-->
+                    <div class="row text-center">
+                      <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"
+                          ><i class="fas fa-map-marker-alt"></i
+                        ></a>
+                        <p>Nuevo Laredo, 88000</p>
+                        <p>Tamaulipas, Mexico</p>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"
+                          ><i class="fas fa-phone"></i
+                        ></a>
+                        <p>+52 867 179 8518</p>
+                        <p>Lun - Vier, 8:00-22:00</p>
+                      </div>
+
+                      <div class="col-md-4">
+                        <a class="btn-floating blue accent-1"
+                          ><i class="fas fa-envelope"></i
+                        ></a>
+                        <p>GeekoShop@gmail.com</p>
+                        <p>adrian1jr@gmail.com</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </section>
+              <!--Section: Contact v.1-->
             </div>
+          </div>
         </div>
+      </div>
+
+      <!--Aqui ocupamos el collapse-->
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-center"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Presiona aqui para ver las preguntas mas frecuentes
+              </button>
+            </h2>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <u>¿Cuáles son las formas de pago?</u>
+              <p></p>
+              Cualquier compra de nuestra tienda online se puede pagar por
+              tarjeta de crédito/débito, por transferencia bancaria o por Paypal
+            </div>
+            <div class="card-body">
+              <u>¿Puedo confiar al ingresar los datos de mi tarjeta?</u>
+              <p></p>
+              no tenemos acceso a tus datos bancarios en ningún momento. Al
+              entrar en el proceso de pago, se te redirecciona a la pasarela de
+              pago segura del banco y así tus datos son totalmente invisibles
+              para nosotros. Una vez realizado el pago, es el banco el que nos
+              da la confirmación instantánea de que el pago se ha tramitado
+              correctamente.
+            </div>
+            <div>
+              <div class="card-body">
+                <u
+                  >Si pago por PayPal, me aparece una comisión ¿Cuál es el
+                  motivo?</u
+                >
+                <p></p>
+                Paypal cobra una comisión a los establecimientos muy superior al
+                de las tarjetas de crédito. Es por ello que si no la cobramos de
+                forma separada, en muchos casos perderíamos dinero con la venta
+                ya que muchas veces esta comisión es superior a nuestro margen.
+                Recuerda que puedes evitar pagarla usando uno de los otros dos
+                medios de pago.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
 
     <!--Esto es nuestro footer y empezamos aqui con las redes sociales-->
     <footer class="page-footer">
-        <div class="bg-secondary">
-            <div class="container">
-                <div class="row py-4 d-flex align-items-center">
-                    <div class="col-md-12 text-center">
-                        <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
-                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
-                    </div>
-                </div>
+      <div class="bg-secondary">
+        <div class="container">
+          <div class="row py-4 d-flex align-items-center">
+            <div class="col-md-12 text-center">
+              <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+              <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
             </div>
+          </div>
         </div>
-        <div class="container text-center text-md-left mt-5">
-            <div class="row">
-                <div class="col-md-3 mx-auto mb-4">
-                    <h6>GeekoShop</h6>
-                    <hr class="bg-success mb-4 mt-0  mx-auto">
-                    <p class="mt-2 text-white">Disfruta de GeekoShop con todas tus amistades y familiares comprando
-                        y
-                        navegando
-                        en la alta calidad de productos que tenemos a la venta.</p>
-                </div>
+      </div>
+      <div class="container text-center text-md-left mt-5">
+        <div class="row">
+          <div class="col-md-3 mx-auto mb-4">
+            <h6>GeekoShop</h6>
+            <hr class="bg-success mb-4 mt-0 mx-auto" />
+            <p class="mt-2 text-white">
+              Disfruta de GeekoShop con todas tus amistades y familiares
+              comprando y navegando en la alta calidad de productos que tenemos
+              a la venta.
+            </p>
+          </div>
 
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6>Producto</h6>
-                    <hr class="bg-success mb-4 mt-0 mx-auto">
+          <div class="col-md-2 mx-auto mb-4">
+            <h6>Producto</h6>
+            <hr class="bg-success mb-4 mt-0 mx-auto" />
 
-                    <ul>
-                        <li class="my-2"><a href="#">Deportivo</a></li>
-                        <li class="my-2"><a href="#">Hogar</a></li>
-                        <li class="my-2"><a href="#">Electronico</a></li>
-                        <li class="my-2"><a href="#">Personal</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mx-auto mb-4">
-                    <h6>Enlaces</h6>
-                    <hr class="bg-success mb-4 mt-0 mx-auto">
-                    <ul>
-                        <li class="my-2"><a href="./index.html">Home</a></li>
-                        <li class="my-2"><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-                        <li class="my-2"><a href="./Tienda.html">Productos</a></li>
-                        <li class="my-2"><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mx-auto mb-4">
-                    <address>
-                        <h6>Contacto</h6>
-                        <hr class="bg-success mb-4 mt-0 mx-auto">
-                        <ul>
-                            <li class="my-2 text-white"><i class="fas fa-home"></i> Sistema #34,
-                                Fraccionamiento villas
-                                del sol</li>
-                            <li class="my-2 text-white"><i class="fas fa-envelope"></i> adrian1jr@gmail.com
-                            </li>
-                            <li class="my-2 text-white"><i class="fas fa-phone"></i> 8671798518</li>
-                        </ul>
-                    </address>
-                </div>
-            </div>
+            <ul>
+              <li class="my-2"><a href="#">Deportivo</a></li>
+              <li class="my-2"><a href="#">Hogar</a></li>
+              <li class="my-2"><a href="#">Electronico</a></li>
+              <li class="my-2"><a href="#">Personal</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 mx-auto mb-4">
+            <h6>Enlaces</h6>
+            <hr class="bg-success mb-4 mt-0 mx-auto" />
+            <ul>
+              <li class="my-2"><a href="./index.html">Home</a></li>
+              <li class="my-2">
+                <a href="./sobrenosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="my-2"><a href="./Tienda.html">Productos</a></li>
+              <li class="my-2"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 mx-auto mb-4">
+            <address>
+              <h6>Contacto</h6>
+              <hr class="bg-success mb-4 mt-0 mx-auto" />
+              <ul>
+                <li class="my-2 text-white">
+                  <i class="fas fa-home"></i> Sistema #34, Fraccionamiento
+                  villas del sol
+                </li>
+                <li class="my-2 text-white">
+                  <i class="fas fa-envelope"></i> adrian1jr@gmail.com
+                </li>
+                <li class="my-2 text-white">
+                  <i class="fas fa-phone"></i> 8671798518
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
+      </div>
     </footer>
-
-
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/contacto.js"></script>
-</body>
-
+  </body>
 </html>
